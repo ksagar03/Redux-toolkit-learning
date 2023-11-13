@@ -1,15 +1,21 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+// import { useState } from "react";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-
+import AddnewTodo from "./components/AddnewTodo";
+import ViewTodos from "./components/ViewTodos";
 function App() {
-  // const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <h1>hello</h1>
-    </div>
+    <>
+     <AddnewTodo />
+     <ViewTodos/>
+    </>
+    // <h1>Hello</h1>
+    // <Router>
+    //   <Routes>
+    //     <Route path="/" element={<AddnewTodo />} />
+    //   </Routes>
+    // </Router>
+   
   );
 }
 
